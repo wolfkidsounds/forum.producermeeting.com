@@ -10,7 +10,7 @@
     'password' => 'producermeeting',
     'charset' => 'utf8mb4',
     'collation' => 'utf8mb4_unicode_ci',
-    'prefix' => '_pm',
+    'prefix' => '_pm_',
     'strict' => false,
     'engine' => 'InnoDB',
     'prefix_indexes' => true,
