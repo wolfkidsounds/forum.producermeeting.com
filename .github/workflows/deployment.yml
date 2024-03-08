@@ -41,7 +41,7 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           local-dir: ./
           protocol: ftp
-          server-dir: ${{ secrets.STAGING_BASE_PATH }}/
+          server-dir: ${{ secrets.BASE_PATH }}/
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           dry-run: false
@@ -65,7 +65,7 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           local-dir: ./
           protocol: ftp
-          server-dir: ${{ secrets.STAGING_BASE_PATH }}/
+          server-dir: ${{ secrets.BASE_PATH }}/
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           dry-run: false
@@ -95,7 +95,7 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           local-dir: ./
           protocol: ftp
-          server-dir: ${{ secrets.STAGING_BASE_PATH }}/
+          server-dir: ${{ secrets.BASE_PATH }}/
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           dry-run: false
