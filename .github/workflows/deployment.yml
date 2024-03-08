@@ -1,0 +1,118 @@
+name: Deployment
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    name: Build And Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Setup PHP
+      uses: shivammathur/setup-php@2cb9b829437ee246e9b3cac53555a39208ca6d28
+      with:
+        php-version: '8.1'
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v2
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+
+    - name: Install Composer
+      run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist --no-dev --optimize-autoloader
+
+    - name: 📂 Deploy Source Files # Deploys ./ 
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+          timeout: 60000
+          server: ${{ secrets.FTP_SERVER }}
+          port: ${{ secrets.FTP_PORT }}
+          local-dir: ./
+          protocol: ftp
+          server-dir: ${{ secrets.STAGING_BASE_PATH }}/
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          dry-run: false
+          state-name: sync-state/.main.json
+          exclude: |
+            **/.git*/**
+            **/public/**
+            **/storage/**
+            **/vendor/**
+            **/storage/**
+            **/CHANGELOG.md
+            **/README.md
+            **/config.php
+            **/LICENSE
+ 
+    - name: 📂 Deploy Assets # Deploys /public
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+          timeout: 60000
+          server: ${{ secrets.FTP_SERVER }}
+          port: ${{ secrets.FTP_PORT }}
+          local-dir: ./
+          protocol: ftp
+          server-dir: ${{ secrets.STAGING_BASE_PATH }}/
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          dry-run: false
+          state-name: sync-state/.assets.json
+          exclude: |
+            **/.git*/**
+            **/storage/**
+            **/sync-state/**
+            **/vendor/**
+            **/.editorconfig
+            **/.nginx.conf
+            **/CHANGELOG.md
+            **/composer.json
+            **/composer.lock
+            **/config.php
+            **/extend.php
+            **/flarum
+            **/LICENSE
+            **/README.md
+            **/site.php
+
+    - name: 📂 Deploy Vendor Files # Deploys /vendor
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+          timeout: 60000
+          server: ${{ secrets.FTP_SERVER }}
+          port: ${{ secrets.FTP_PORT }}
+          local-dir: ./
+          protocol: ftp
+          server-dir: ${{ secrets.STAGING_BASE_PATH }}/
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          dry-run: false
+          state-name: sync-state/.vendor.json
+          exclude: |
+            **/.git*/**
+            **/public/**
+            **/storage/**
+            **/sync-state/**
+            **/.editorconfig
+            **/.nginx.conf
+            **/CHANGELOG.md
+            **/composer.json
+            **/composer.lock
+            **/config.php
+            **/extend.php
+            **/flarum
+            **/LICENSE
+            **/README.md
+            **/site.php
