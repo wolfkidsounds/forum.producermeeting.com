@@ -87,6 +87,36 @@ jobs:
             **/README.md
             **/site.php
 
+    - name: 📂 Deploy Storage # Deploys /storage
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+          timeout: 60000
+          server: ${{ secrets.FTP_SERVER }}
+          port: ${{ secrets.FTP_PORT }}
+          local-dir: ./
+          protocol: ftp
+          server-dir: ${{ secrets.BASE_PATH }}/
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          dry-run: false
+          state-name: sync-state/.storage.json
+          exclude: |
+            **/.git*/**
+            **/sync-state/**
+            **/public/**
+            **/vendor/**
+            **/.editorconfig
+            **/.nginx.conf
+            **/CHANGELOG.md
+            **/composer.json
+            **/composer.lock
+            **/config.php
+            **/extend.php
+            **/flarum
+            **/LICENSE
+            **/README.md
+            **/site.php
+
     - name: 📂 Deploy Vendor Files # Deploys /vendor
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
