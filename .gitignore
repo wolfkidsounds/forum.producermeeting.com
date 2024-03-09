@@ -1,4 +1,2 @@
-/storage/*
 /vendor/*
-/config.php
 config.php
