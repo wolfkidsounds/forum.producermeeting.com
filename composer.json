@@ -21,6 +21,10 @@
         "docs": "https://docs.flarum.org/"
     },
     "require": {
+        "afrux/forum-widgets-core": "*",
+        "afrux/online-users-widget": "*",
+        "datlechin/flarum-birthdays": "*",
+        "datlechin/flarum-discussion-overview": "*",
         "flarum-lang/german": "^1.9",
         "flarum/approval": "*",
         "flarum/bbcode": "*",
@@ -38,7 +42,12 @@
         "flarum/suspend": "*",
         "flarum/tags": "*",
         "fof/best-answer": "^1.4",
+        "fof/filter": "*",
+        "fof/links": "^1.2",
         "fof/polls": "^2.1",
+        "fof/reactions": "*",
+        "fof/upload": "*",
+        "glowingblue/password-strength": "*",
         "sycho/flarum-private-facade": "*"
     },
     "config": {
