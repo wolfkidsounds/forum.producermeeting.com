@@ -4,8 +4,154 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3724ca32aa6613c77fdeef7fba5cea38",
+    "content-hash": "4ee0f0a88a4e860356223f3430d1f891",
     "packages": [
+        {
+            "name": "afrux/forum-widgets-core",
+            "version": "v0.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afrux/forum-widgets-core.git",
+                "reference": "32305870b2bf74dd70e4b8908db9ea07efbb52a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/afrux/forum-widgets-core/zipball/32305870b2bf74dd70e4b8908db9ea07efbb52a3",
+                "reference": "32305870b2bf74dd70e4b8908db9ea07efbb52a3",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "require-dev": {
+                "flarum/testing": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                },
+                "flarum-extension": {
+                    "title": "Forum Widgets",
+                    "category": "",
+                    "icon": {
+                        "image": "icon.svg"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Afrux\\ForumWidgets\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sami Mazouz",
+                    "email": "sychocouldy@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Core Extension for Managing Forum Widgets",
+            "homepage": "https://afrux.github.io",
+            "keywords": [
+                "core",
+                "flarum",
+                "framework",
+                "widgets"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/",
+                "issues": "https://github.com/afrux/forum-widgets-core/issues",
+                "source": "https://github.com/afrux/forum-widgets-core"
+            },
+            "funding": [
+                {
+                    "url": "https://www.buymeacoffee.com/sycho",
+                    "type": "other"
+                }
+            ],
+            "time": "2022-03-03T19:50:55+00:00"
+        },
+        {
+            "name": "afrux/online-users-widget",
+            "version": "v0.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afrux/online-users-widget.git",
+                "reference": "092802cdd833d6d028b94f4177f9d46be9d8486c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/afrux/online-users-widget/zipball/092802cdd833d6d028b94f4177f9d46be9d8486c",
+                "reference": "092802cdd833d6d028b94f4177f9d46be9d8486c",
+                "shasum": ""
+            },
+            "require": {
+                "afrux/forum-widgets-core": "^0.1.7",
+                "flarum/core": "^1.0.0"
+            },
+            "require-dev": {
+                "flarum/testing": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                },
+                "flarum-extension": {
+                    "title": "Online Users Widget",
+                    "category": "forum-widget",
+                    "icon": {
+                        "name": "fas fa-user-friends",
+                        "backgroundColor": "#e34b6e",
+                        "color": "#fff"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Afrux\\OnlineUsers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sami Mazouz",
+                    "email": "sychocouldy@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Forum Widget That Lists Online Users",
+            "homepage": "https://afrux.github.io",
+            "keywords": [
+                "Users",
+                "flarum",
+                "online",
+                "widget"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/",
+                "issues": "https://github.com/afrux/online-users-widget/issues",
+                "source": "https://github.com/afrux/online-users-widget"
+            },
+            "funding": [
+                {
+                    "url": "https://www.buymeacoffee.com/sycho",
+                    "type": "other"
+                }
+            ],
+            "time": "2022-03-03T19:52:07+00:00"
+        },
         {
             "name": "axy/backtrace",
             "version": "2.0.0",
@@ -221,6 +367,161 @@
                 "source": "https://github.com/components/font-awesome/tree/5.15.4"
             },
             "time": "2021-08-15T10:31:24+00:00"
+        },
+        {
+            "name": "datlechin/flarum-birthdays",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/datlechin/flarum-birthdays.git",
+                "reference": "56e3a9db3fb7be4e083e447d5920a70007d114e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/datlechin/flarum-birthdays/zipball/56e3a9db3fb7be4e083e447d5920a70007d114e2",
+                "reference": "56e3a9db3fb7be4e083e447d5920a70007d114e2",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.5",
+                "php": "^8.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Birthdays",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-birthday-cake",
+                        "color": "#fff",
+                        "backgroundColor": "#D3241C"
+                    }
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "admin": true,
+                        "forum": true,
+                        "js": true,
+                        "jsCommon": false,
+                        "css": true,
+                        "gitConf": true,
+                        "githubActions": true,
+                        "prettier": true,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "backendTesting": false,
+                        "editorConfig": true,
+                        "styleci": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Datlechin\\Birthdays\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ngo Quoc Dat",
+                    "email": "datlechin@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Adds birthdays to user.",
+            "homepage": "https://ngoquocdat.dev",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/29793",
+                "issues": "https://github.com/datlechin/flarum-birthdays/issues",
+                "source": "https://github.com/datlechin/flarum-birthdays"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/datlechin",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-01-27T17:16:50+00:00"
+        },
+        {
+            "name": "datlechin/flarum-discussion-overview",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flatension/discussion-overview.git",
+                "reference": "c1d72d99a6738d344b770e56041c96b59cb72f29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flatension/discussion-overview/zipball/c1d72d99a6738d344b770e56041c96b59cb72f29",
+                "reference": "c1d72d99a6738d344b770e56041c96b59cb72f29",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Discussion Overview",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-chart-bar",
+                        "color": "#fff",
+                        "backgroundColor": "#D3241C"
+                    }
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "admin": true,
+                        "forum": true,
+                        "js": true,
+                        "jsCommon": false,
+                        "css": true,
+                        "locale": true,
+                        "gitConf": true,
+                        "githubActions": true,
+                        "prettier": true,
+                        "typescript": true,
+                        "bundlewatch": false,
+                        "backendTesting": false,
+                        "editorConfig": true,
+                        "styleci": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Datlechin\\DiscussionOverview\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ngo Quoc Dat",
+                    "email": "datlechin@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Display overview of discussions.",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/31265",
+                "issues": "https://github.com/flatension/discussion-overview/issues",
+                "source": "https://github.com/datlechin/flarum-discussion-overview"
+            },
+            "time": "2022-07-22T15:59:39+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -995,6 +1296,51 @@
                 }
             ],
             "time": "2020-12-29T14:50:06+00:00"
+        },
+        {
+            "name": "enshrined/svg-sanitize",
+            "version": "0.15.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/darylldoyle/svg-sanitizer.git",
+                "reference": "e50b83a2f1f296ca61394fe88fbfe3e896a84cf4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/e50b83a2f1f296ca61394fe88fbfe3e896a84cf4",
+                "reference": "e50b83a2f1f296ca61394fe88fbfe3e896a84cf4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "php": "^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5 || ^8.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "enshrined\\svgSanitize\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Daryll Doyle",
+                    "email": "daryll@enshrined.co.uk"
+                }
+            ],
+            "description": "An SVG sanitizer for PHP",
+            "support": {
+                "issues": "https://github.com/darylldoyle/svg-sanitizer/issues",
+                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.15.4"
+            },
+            "time": "2022-02-21T09:13:59+00:00"
         },
         {
             "name": "fig/http-message-util",
@@ -2569,6 +2915,162 @@
             "time": "2024-02-19T21:56:51+00:00"
         },
         {
+            "name": "fof/filter",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/filter.git",
+                "reference": "347c235c306c5714abb99124dd8ec535191a42c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/filter/zipball/347c235c306c5714abb99124dd8ec535191a42c9",
+                "reference": "347c235c306c5714abb99124dd8ec535191a42c9",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/approval": "*",
+                "flarum/core": "^1.2.0",
+                "flarum/flags": "*"
+            },
+            "require-dev": {
+                "flarum/phpstan": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Filter",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-filter",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/5131"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Filter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Charlie K",
+                    "email": "charlie.k@redevs.org"
+                },
+                {
+                    "name": "Katos",
+                    "email": "katos@flarum.org"
+                }
+            ],
+            "description": "Filter out words and phrases from forum posts",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "moderation"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/5131",
+                "issues": "https://github.com/friendsofflarum/filter/issues",
+                "source": "https://github.com/friendsofflarum/filter"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2023-11-12T15:28:44+00:00"
+        },
+        {
+            "name": "fof/links",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/links.git",
+                "reference": "6c0d9aa0bdd4e83026545ce0044ea227693a961c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/links/zipball/6c0d9aa0bdd4e83026545ce0044ea227693a961c",
+                "reference": "6c0d9aa0bdd4e83026545ce0044ea227693a961c",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0"
+            },
+            "replace": {
+                "sijad/flarum-ext-links": "*"
+            },
+            "require-dev": {
+                "flarum/phpstan": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Links",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-bars",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/18335"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Links\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martín",
+                    "email": "me+fof@datitisev.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Manage Flarum primary navbar menu links",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/18335",
+                "issues": "https://github.com/FriendsOfFlarum/links/issues",
+                "source": "https://github.com/FriendsOfFlarum/links"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2024-02-26T11:31:53+00:00"
+        },
+        {
             "name": "fof/polls",
             "version": "2.1.2",
             "source": {
@@ -2647,6 +3149,198 @@
             "time": "2023-11-12T17:24:19+00:00"
         },
         {
+            "name": "fof/reactions",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/reactions.git",
+                "reference": "87a09add9aeae75cb2ae7eda29f5d74ad271c1c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/reactions/zipball/87a09add9aeae75cb2ae7eda29f5d74ad271c1c4",
+                "reference": "87a09add9aeae75cb2ae7eda29f5d74ad271c1c4",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0",
+                "php": "^7.4 | ^8.0"
+            },
+            "replace": {
+                "reflar/reactions": "*"
+            },
+            "require-dev": {
+                "flarum/likes": "*",
+                "flarum/phpstan": "*",
+                "flarum/testing": "^1.0.0",
+                "fof/gamification": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Reactions",
+                    "category": "feature",
+                    "icon": {
+                        "name": "far fa-smile",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/20655"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "backendTesting": true,
+                        "githubActions": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Reactions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martín",
+                    "email": "me+reflar@datitisev.me",
+                    "homepage": "https://datitisev.me",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Charlie K",
+                    "email": "issyrocks12@reflar.email",
+                    "homepage": "https://redevs.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Reactions for Flarum",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "Settings",
+                "flarum",
+                "misc",
+                "reactions",
+                "reflar"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/20655",
+                "issues": "https://github.com/friendsofflarum/reactions/issues",
+                "source": "https://github.com/friendsofflarum/reactions"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2024-02-11T21:51:01+00:00"
+        },
+        {
+            "name": "fof/upload",
+            "version": "1.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/upload.git",
+                "reference": "68c0d3b3797ebf45383800286d64a7b2a42b25a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/upload/zipball/68c0d3b3797ebf45383800286d64a7b2a42b25a3",
+                "reference": "68c0d3b3797ebf45383800286d64a7b2a42b25a3",
+                "shasum": ""
+            },
+            "require": {
+                "enshrined/svg-sanitize": "^0.15.4",
+                "ext-json": "*",
+                "flarum/core": "^1.8.3",
+                "guzzlehttp/guzzle": "^6.0 || ^7.0",
+                "php": "^8.0",
+                "ramsey/uuid": "^3.5.2 || ^4",
+                "softcreatr/php-mime-detector": "^3.0"
+            },
+            "replace": {
+                "flagrow/upload": "*"
+            },
+            "require-dev": {
+                "blomstra/gdpr": "@beta",
+                "flarum/phpstan": "*",
+                "flarum/testing": "^1.0.0",
+                "league/flysystem-aws-s3-v3": "^1.0",
+                "overtrue/flysystem-qiniu": "1.0.4"
+            },
+            "suggest": {
+                "league/flysystem-aws-s3-v3": "Uploads to AWS S3 using API version 3.",
+                "overtrue/flysystem-qiniu": "Uploads to QiNiu using API."
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Upload",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-file-upload",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/4154"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true,
+                        "typescript": true,
+                        "backendTesting": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Upload\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniël Klabbers",
+                    "email": "daniel@klabbers.email",
+                    "homepage": "https://luceos.com/"
+                }
+            ],
+            "description": "The file upload extension for the Flarum forum with insane intelligence.",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "document",
+                "file",
+                "flarum",
+                "image",
+                "upload",
+                "uploader",
+                "video"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/4154",
+                "issues": "https://github.com/FriendsOfFlarum/upload/issues",
+                "source": "https://github.com/FriendsOfFlarum/upload"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2024-01-04T11:26:01+00:00"
+        },
+        {
             "name": "franzl/whoops-middleware",
             "version": "2.0.0",
             "source": {
@@ -2689,6 +3383,86 @@
                 "source": "https://github.com/franzliedke/whoops-middleware/tree/2.0.0"
             },
             "time": "2021-01-03T01:30:07+00:00"
+        },
+        {
+            "name": "glowingblue/password-strength",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/glowingblue/flarum-ext-password-strength.git",
+                "reference": "7e7a3078a3b8ab8f4cc0e112a2e55de3ebfbe62b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/glowingblue/flarum-ext-password-strength/zipball/7e7a3078a3b8ab8f4cc0e112a2e55de3ebfbe62b",
+                "reference": "7e7a3078a3b8ab8f4cc0e112a2e55de3ebfbe62b",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0"
+            },
+            "conflict": {
+                "therealsujitk/flarum-ext-show-password": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "GB Password Strength",
+                    "category": "feature",
+                    "optional-dependencies": [
+                        "nearata/flarum-ext-signup-confirm-password",
+                        "ianm/twofactor"
+                    ],
+                    "icon": {
+                        "name": "fas fa-user-shield",
+                        "backgroundColor": "#00a7e3",
+                        "color": "#fff"
+                    }
+                },
+                "extiverse": {
+                    "discuss": "https://discuss.flarum.org/d/26191"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GlowingBlue\\PasswordStrength\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hasan Özbey",
+                    "email": "hasanoozbey@gmail.com",
+                    "homepage": "https://github.com/the-turk"
+                },
+                {
+                    "name": "Rafael Horvat",
+                    "email": "rafael.horvat@icloud.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "GlowingBlue",
+                    "email": "dev@glowingblue.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Low-budget password strength estimation for your Flarum forum.",
+            "keywords": [
+                "checker",
+                "flarum",
+                "password",
+                "strength"
+            ],
+            "support": {
+                "email": "dev@glowingblue.com",
+                "forum": "https://discuss.flarum.org/d/26191-gb-password-strength",
+                "issues": "https://github.com/glowingblue/flarum-ext-password-strength/issues",
+                "source": "https://github.com/glowingblue/flarum-ext-password-strength"
+            },
+            "time": "2024-01-04T16:06:12+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -6822,6 +7596,69 @@
                 "source": "https://github.com/s9e/TextFormatter/tree/2.14.3"
             },
             "time": "2023-11-11T15:27:53+00:00"
+        },
+        {
+            "name": "softcreatr/php-mime-detector",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SoftCreatR/php-mime-detector.git",
+                "reference": "bd26abae1659901617ed51150063c310e089eef9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SoftCreatR/php-mime-detector/zipball/bd26abae1659901617ed51150063c310e089eef9",
+                "reference": "bd26abae1659901617ed51150063c310e089eef9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=7.0",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SoftCreatR\\MimeDetector\\": "src/SoftCreatR/MimeDetector"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Sascha Greuel",
+                    "email": "hello@1-2.dev"
+                },
+                {
+                    "name": "Sebastian Zimmer",
+                    "email": "morik@softcreatr.de"
+                }
+            ],
+            "description": "Mime Detector Decoder",
+            "homepage": "https://1-2.dev",
+            "keywords": [
+                "Magic Number",
+                "file type",
+                "mime",
+                "mime type"
+            ],
+            "support": {
+                "email": "hello@1-2.dev",
+                "issues": "https://github.com/SoftCreatR/php-mime-detector/issues",
+                "source": "https://github.com/SoftCreatR/php-mime-detector"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/softcreatr",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-05-30T10:34:43+00:00"
         },
         {
             "name": "staudenmeir/eloquent-eager-limit",
