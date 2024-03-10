@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9248c9c30a373088b9bda30ba94425e7",
+    "content-hash": "85cbb5e226c6a1318b5fcef14da45f7f",
     "packages": [
         {
             "name": "afrux/forum-widgets-core",
@@ -2870,6 +2870,82 @@
             "time": "2024-02-19T21:56:51+00:00"
         },
         {
+            "name": "fof/discussion-thumbnail",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/discussion-thumbnail.git",
+                "reference": "0242f3f5b7c2e81c1939803a5350a2b9652c29a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/discussion-thumbnail/zipball/0242f3f5b7c2e81c1939803a5350a2b9652c29a4",
+                "reference": "0242f3f5b7c2e81c1939803a5350a2b9652c29a4",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0"
+            },
+            "require-dev": {
+                "flarum/phpstan": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Discussion Thumbnail",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-image",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/22231"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\DiscussionThumbnail\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martin",
+                    "email": "me+fof@datitisev.me",
+                    "homepage": "https://datitisev.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Replace author avatars with the first image in a discussion's starting post",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum",
+                "friendsofflarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/22231",
+                "issues": "https://github.com/FriendsOfFlarum/discussion-thumbnail/issues",
+                "source": "https://github.com/FriendsOfFlarum/discussion-thumbnail"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2023-11-12T14:21:20+00:00"
+        },
+        {
             "name": "fof/formatting",
             "version": "1.0.3",
             "source": {
@@ -3182,6 +3258,83 @@
                 }
             ],
             "time": "2024-02-11T21:51:01+00:00"
+        },
+        {
+            "name": "fof/socialprofile",
+            "version": "1.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/socialprofile.git",
+                "reference": "1d1c6bd0f3e99039403a18461ea8b9270044bb23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/socialprofile/zipball/1d1c6bd0f3e99039403a18461ea8b9270044bb23",
+                "reference": "1d1c6bd0f3e99039403a18461ea8b9270044bb23",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.3.1"
+            },
+            "replace": {
+                "davis/flarum-ext-socialprofile": "*"
+            },
+            "require-dev": {
+                "flarum/phpstan": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Social Profile",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-globe",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#ffff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/18775"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\SocialProfile\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martín",
+                    "email": "david.s@redevs.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add custom social media pages to your user profile",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/18775",
+                "issues": "https://github.com/FriendsOfFlarum/socialprofile/issues",
+                "source": "https://github.com/FriendsOfFlarum/socialprofile"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2023-11-12T11:05:21+00:00"
         },
         {
             "name": "franzl/whoops-middleware",

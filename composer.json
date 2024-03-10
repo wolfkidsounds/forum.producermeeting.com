@@ -42,10 +42,12 @@
         "flarum/suspend": "*",
         "flarum/tags": "*",
         "fof/best-answer": "^1.4",
+        "fof/discussion-thumbnail": "*",
         "fof/formatting": "^1.0",
         "fof/links": "^1.2",
         "fof/polls": "^2.1",
         "fof/reactions": "*",
+        "fof/socialprofile": "^1.1",
         "glowingblue/password-strength": "*",
         "sycho/flarum-private-facade": "*"
     },
