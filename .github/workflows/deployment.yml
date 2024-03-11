@@ -120,6 +120,7 @@ jobs:
             **/.git*/**
             **/sync-state/**
             **/public/**
+            **/storage/cache/**
             **/vendor/**
             **/.editorconfig
             **/.nginx.conf
