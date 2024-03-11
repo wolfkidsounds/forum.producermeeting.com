@@ -19,6 +19,13 @@ flarum.extensions['flarum-tags']=module.exports;
 
 var module={};
 
+(()=>{var e={n:r=>{var t=r&&r.__esModule?()=>r.default:()=>r;return e.d(t,{a:t}),t},d:(r,t)=>{for(var o in t)e.o(t,o)&&!e.o(r,o)&&Object.defineProperty(r,o,{enumerable:!0,get:t[o]})},o:(e,r)=>Object.prototype.hasOwnProperty.call(e,r),r:e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})}},r={};(()=>{"use strict";e.r(r);const t=flarum.core.compat["admin/app"];var o=e.n(t);o().initializers.add("flarum-sticky",(function(){o().extensionData.for("flarum-sticky").registerPermission({icon:"fas fa-thumbtack",label:o().translator.trans("flarum-sticky.admin.permissions.sticky_discussions_label"),permission:"discussion.sticky"},"moderate",95)}))})(),module.exports=r})();
+
+
+flarum.extensions['flarum-sticky']=module.exports;
+
+var module={};
+
 (()=>{var r={n:s=>{var e=s&&s.__esModule?()=>s.default:()=>s;return r.d(e,{a:e}),e},d:(s,e)=>{for(var a in e)r.o(e,a)&&!r.o(s,a)&&Object.defineProperty(s,a,{enumerable:!0,get:e[a]})},o:(r,s)=>Object.prototype.hasOwnProperty.call(r,s),r:r=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})}},s={};(()=>{"use strict";r.r(s);const e=flarum.core.compat["common/extend"],a=flarum.core.compat["admin/app"];var o=r.n(a);o().initializers.add("flarum-approval",(function(){(0,e.extend)(o(),"getRequiredPermissions",(function(r,s){"discussion.startWithoutApproval"===s&&r.push("startDiscussion"),"discussion.replyWithoutApproval"===s&&r.push("discussion.reply")})),o().extensionData.for("flarum-approval").registerPermission({icon:"fas fa-check",label:o().translator.trans("flarum-approval.admin.permissions.start_discussions_without_approval_label"),permission:"discussion.startWithoutApproval"},"start",95).registerPermission({icon:"fas fa-check",label:o().translator.trans("flarum-approval.admin.permissions.reply_without_approval_label"),permission:"discussion.replyWithoutApproval"},"reply",95).registerPermission({icon:"fas fa-check",label:o().translator.trans("flarum-approval.admin.permissions.approve_posts_label"),permission:"discussion.approvePosts"},"moderate",65)}))})(),module.exports=s})();
 
 
@@ -37,6 +44,13 @@ function s(t,e){var n=Object.keys(t);if(Object.getOwnPropertySymbols){var o=Obje
 
 
 flarum.extensions['afrux-forum-widgets-core']=module.exports;
+
+var module={};
+
+(()=>{var t={n:e=>{var s=e&&e.__esModule?()=>e.default:()=>e;return t.d(s,{a:s}),s},d:(e,s)=>{for(var i in s)t.o(s,i)&&!t.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:s[i]})},o:(t,e)=>Object.prototype.hasOwnProperty.call(t,e),r:t=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})}},e={};(()=>{"use strict";t.r(e);const s=flarum.core.compat.app;var i=t.n(s);i().initializers.add("the-turk-stickiest",(function(){i().extensionData.for("the-turk-stickiest").registerSetting({setting:"the-turk-stickiest.badge_icon",type:"text",label:i().translator.trans("the-turk-stickiest.admin.settings.badge_icon_label"),help:i().translator.trans("the-turk-stickiest.admin.settings.badge_icon_text")}).registerSetting({setting:"the-turk-stickiest.display_tag_sticky",type:"boolean",label:i().translator.trans("the-turk-stickiest.admin.settings.display_tag_sticky_label"),help:i().translator.trans("the-turk-stickiest.admin.settings.display_tag_sticky_text")}).registerPermission({icon:i().data.settings["the-turk-stickiest.badge_icon"],label:i().translator.trans("the-turk-stickiest.admin.permissions.super_sticky_discussions_label"),permission:"discussion.stickiest"},"moderate",97).registerPermission({icon:"fas fa-thumbtack",label:i().translator.trans("the-turk-stickiest.admin.permissions.tag_sticky_discussions_label"),permission:"discussion.stickiest.tagSticky"},"moderate",96)}))})(),module.exports=e})();
+
+
+flarum.extensions['the-turk-stickiest']=module.exports;
 
 var module={};
 
@@ -164,13 +178,6 @@ var module={};
 
 
 flarum.extensions['flarum-suspend']=module.exports;
-
-var module={};
-
-(()=>{var e={n:r=>{var t=r&&r.__esModule?()=>r.default:()=>r;return e.d(t,{a:t}),t},d:(r,t)=>{for(var o in t)e.o(t,o)&&!e.o(r,o)&&Object.defineProperty(r,o,{enumerable:!0,get:t[o]})},o:(e,r)=>Object.prototype.hasOwnProperty.call(e,r),r:e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})}},r={};(()=>{"use strict";e.r(r);const t=flarum.core.compat["admin/app"];var o=e.n(t);o().initializers.add("flarum-sticky",(function(){o().extensionData.for("flarum-sticky").registerPermission({icon:"fas fa-thumbtack",label:o().translator.trans("flarum-sticky.admin.permissions.sticky_discussions_label"),permission:"discussion.sticky"},"moderate",95)}))})(),module.exports=r})();
-
-
-flarum.extensions['flarum-sticky']=module.exports;
 
 var module={};
 
