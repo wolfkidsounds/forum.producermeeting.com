@@ -62,7 +62,8 @@
         "fof/split": "*",
         "glowingblue/password-strength": "*",
         "kyrne/whisper": "^0.1.4",
-        "sycho/flarum-private-facade": "*"
+        "sycho/flarum-private-facade": "*",
+        "the-turk/flarum-stickiest": "3.0.0"
     },
     "config": {
         "preferred-install": "dist",
