@@ -30,8 +30,24 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-php-
 
+    - name: Enable Maintenance Mode (Upload Maintenance PHP)
+      uses: bayssmekanique/action-simple-file-upload@v2
+      with:
+        user: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        host: ${{ secrets.FTP_SERVER }}
+        src: public/maintenance.php
+        dest: ${{ secrets.BASE_PATH }}/public/index.php
+        secure: true
+        verbose: true
+
     - name: Install Composer
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist --optimize-autoloader
+    
+    - name: Setup Flarum
+      run: |
+        php flarum cache:clear
+        php flarum assets:publish
 
     - name: 📂 Deploy Source Files # Deploys ./ 
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -146,3 +162,14 @@ jobs:
             **/LICENSE
             **/README.md
             **/site.php
+
+    - name: Disable Maintenance Mode (Upload Public Index PHP)
+      uses: bayssmekanique/action-simple-file-upload@v2
+      with:
+        user: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        host: ${{ secrets.FTP_SERVER }}
+        src: public/index.php
+        dest: ${{ secrets.BASE_PATH }}/public/index.php
+        secure: true
+        verbose: true
