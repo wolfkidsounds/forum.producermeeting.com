@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "316ad698246f475d95d7732705d66d30",
+    "content-hash": "02099ab44b00d8e55f6bd9c89d92780c",
     "packages": [
         {
             "name": "afrux/forum-widgets-core",
@@ -3757,85 +3757,6 @@
                 }
             ],
             "time": "2023-11-12T17:24:19+00:00"
-        },
-        {
-            "name": "fof/pretty-mail",
-            "version": "1.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FriendsOfFlarum/pretty-mail.git",
-                "reference": "5440ba9224446d6b478639a4407c661e3d4dbd46"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfFlarum/pretty-mail/zipball/5440ba9224446d6b478639a4407c661e3d4dbd46",
-                "reference": "5440ba9224446d6b478639a4407c661e3d4dbd46",
-                "shasum": ""
-            },
-            "require": {
-                "flarum/core": "^1.5.0"
-            },
-            "replace": {
-                "reflar/pretty-mail": "*"
-            },
-            "require-dev": {
-                "flarum/phpstan": "*"
-            },
-            "type": "flarum-extension",
-            "extra": {
-                "flarum-extension": {
-                    "title": "FoF Pretty Mail",
-                    "category": "feature",
-                    "icon": {
-                        "name": "fas fa-envelope-open",
-                        "backgroundColor": "#e74c3c",
-                        "color": "#fff"
-                    }
-                },
-                "flagrow": {
-                    "discuss": "https://discuss.flarum.org/d/11178"
-                },
-                "flarum-cli": {
-                    "modules": {
-                        "githubActions": true
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "FoF\\PrettyMail\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "FoF Team",
-                    "email": "team@friendsofflarum.org",
-                    "role": "developer"
-                }
-            ],
-            "description": "Create HTML email for Flarum",
-            "homepage": "https://friendsofflarum.org",
-            "keywords": [
-                "extension",
-                "flarum",
-                "mail"
-            ],
-            "support": {
-                "forum": "https://discuss.flarum.org/d/11178",
-                "issues": "https://github.com/FriendsOfFlarum/pretty-mail/issues",
-                "source": "https://github.com/FriendsOfFlarum/pretty-mail"
-            },
-            "funding": [
-                {
-                    "url": "https://opencollective.com/fof/donate",
-                    "type": "website"
-                }
-            ],
-            "time": "2023-11-12T16:56:33+00:00"
         },
         {
             "name": "fof/profile-image-crop",
