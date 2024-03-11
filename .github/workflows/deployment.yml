@@ -67,6 +67,8 @@ jobs:
             **/README.md
             **/config.php
             **/LICENSE
+            **/install.bat
+            **/update.bat
  
     - name: 📂 Deploy Assets # Deploys /public
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -97,6 +99,9 @@ jobs:
             **/LICENSE
             **/README.md
             **/site.php
+            **/install.bat
+            **/update.bat
+            **/public/maintenance.php
 
     - name: 📂 Deploy Storage # Deploys /storage
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -127,6 +132,8 @@ jobs:
             **/LICENSE
             **/README.md
             **/site.php
+            **/install.bat
+            **/update.bat
 
     - name: 📂 Deploy Vendor Files # Deploys /vendor
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -157,6 +164,8 @@ jobs:
             **/LICENSE
             **/README.md
             **/site.php
+            **/install.bat
+            **/update.bat
 
     - name: Disable Maintenance Mode (Upload Public Index PHP)
       uses: bayssmekanique/action-simple-file-upload@v2
