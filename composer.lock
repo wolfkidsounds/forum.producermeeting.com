@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e21bf9899b268907567f8779ea04051c",
+    "content-hash": "316ad698246f475d95d7732705d66d30",
     "packages": [
         {
             "name": "afrux/forum-widgets-core",
@@ -636,6 +636,78 @@
                 "source": "https://github.com/datlechin/flarum-discussion-overview"
             },
             "time": "2022-07-22T15:59:39+00:00"
+        },
+        {
+            "name": "datlechin/flarum-offline-indicator",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/datlechin/flarum-offline-indicator.git",
+                "reference": "53830147d64599a5cd27e06b96ebe5ff77ef66d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/datlechin/flarum-offline-indicator/zipball/53830147d64599a5cd27e06b96ebe5ff77ef66d5",
+                "reference": "53830147d64599a5cd27e06b96ebe5ff77ef66d5",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Offline Indicator",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-wifi",
+                        "color": "#fff",
+                        "backgroundColor": "#D3241C"
+                    }
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "admin": false,
+                        "forum": true,
+                        "js": true,
+                        "jsCommon": false,
+                        "css": false,
+                        "locale": true,
+                        "gitConf": true,
+                        "githubActions": true,
+                        "prettier": true,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "backendTesting": false,
+                        "editorConfig": true,
+                        "styleci": true
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ngô Quốc Đạt",
+                    "email": "datlechin@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple offline indicator that shows when the user loses internet connection.",
+            "homepage": "https://ngoquocdat.com",
+            "keywords": [
+                "flarum",
+                "indicator",
+                "offline"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/30714",
+                "issues": "https://github.com/datlechin/flarum-offline-indicator/issues",
+                "source": "https://github.com/datlechin/flarum-offline-indicator"
+            },
+            "time": "2022-04-28T16:47:51+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -1410,6 +1482,55 @@
                 }
             ],
             "time": "2020-12-29T14:50:06+00:00"
+        },
+        {
+            "name": "fgribreau/mailchecker",
+            "version": "v4.1.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FGRibreau/mailchecker.git",
+                "reference": "4b5dab1c590f09eba94b07210a89816578fe0c51"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FGRibreau/mailchecker/zipball/4b5dab1c590f09eba94b07210a89816578fe0c51",
+                "reference": "4b5dab1c590f09eba94b07210a89816578fe0c51",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "platform/php/MailChecker.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Temporary (disposable/throwaway) email detection library. Covers 1987 fake email providers.",
+            "keywords": [
+                "detection",
+                "disposable",
+                "email",
+                "fake"
+            ],
+            "support": {
+                "issues": "https://github.com/FGRibreau/mailchecker/issues",
+                "source": "https://github.com/FGRibreau/mailchecker/tree/v4.1.19"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fgribreau",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-07-26T09:53:04+00:00"
         },
         {
             "name": "fig/http-message-util",
@@ -3060,6 +3181,73 @@
             "time": "2023-11-12T14:21:20+00:00"
         },
         {
+            "name": "fof/disposable-emails",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/disposable-emails.git",
+                "reference": "304cb670eb1b731f6108cc5e5401096e3c41ef2c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/disposable-emails/zipball/304cb670eb1b731f6108cc5e5401096e3c41ef2c",
+                "reference": "304cb670eb1b731f6108cc5e5401096e3c41ef2c",
+                "shasum": ""
+            },
+            "require": {
+                "fgribreau/mailchecker": "^4.0.7",
+                "flarum/core": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Disposable Emails",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-user-times",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/20457-friendsofflarum-disposable-emails"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\DisposableEmails\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martín",
+                    "email": "david.s@redevs.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Prevent users from signing up with disposable emails",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/21894",
+                "issues": "https://github.com/FriendsOfFlarum/disposabile-emails/issues",
+                "source": "https://github.com/FriendsOfFlarum/disposable-emails"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2021-05-22T18:56:14+00:00"
+        },
+        {
             "name": "fof/extend",
             "version": "1.3.3",
             "source": {
@@ -3175,6 +3363,86 @@
                 }
             ],
             "time": "2023-03-15T11:26:45+00:00"
+        },
+        {
+            "name": "fof/impersonate",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/impersonate.git",
+                "reference": "361e2279cd52d0751c32fa7c3ede597a0c5231c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/impersonate/zipball/361e2279cd52d0751c32fa7c3ede597a0c5231c1",
+                "reference": "361e2279cd52d0751c32fa7c3ede597a0c5231c1",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0"
+            },
+            "replace": {
+                "flagrow/impersonate": "*"
+            },
+            "suggest": {
+                "fof/moderator-notes": "Allows audit logging when users are impersonated"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Impersonate",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-id-card",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/9868"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Impersonate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Clark Winkelmann",
+                    "email": "clark.winkelmann@gmail.com",
+                    "homepage": "https://clarkwinkelmann.com/"
+                },
+                {
+                    "name": "IanM",
+                    "email": "ian@blomstra.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Login as other users of your forum",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "extension",
+                "flarum",
+                "impersonate",
+                "login"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/9868",
+                "issues": "https://github.com/FriendsOfFlarum/impersonate/issues",
+                "source": "https://github.com/FriendsOfFlarum/impersonate"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2023-03-15T10:27:23+00:00"
         },
         {
             "name": "fof/links",
@@ -3570,6 +3838,153 @@
             "time": "2023-11-12T16:56:33+00:00"
         },
         {
+            "name": "fof/profile-image-crop",
+            "version": "1.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/profile-image-crop.git",
+                "reference": "128b908b4b8c136908345df370c6e8adec5b7e63"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/profile-image-crop/zipball/128b908b4b8c136908345df370c6e8adec5b7e63",
+                "reference": "128b908b4b8c136908345df370c6e8adec5b7e63",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.5.0"
+            },
+            "replace": {
+                "wiseclock/flarum-ext-profile-image-crop": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Profile Image Crop",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-crop",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/18286"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\ProfileImageCrop\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martin",
+                    "email": "me+fof@datitisev.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Allow cropping when uploading profile picture",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/18286",
+                "issues": "https://github.com/FriendsOfFlarum/profile-image-crop/issues",
+                "source": "https://github.com/FriendsOfFlarum/profile-image-crop"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2023-09-05T14:57:51+00:00"
+        },
+        {
+            "name": "fof/pwned-passwords",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/pwned-passwords.git",
+                "reference": "7fe2088049127b9151ea457de21d13604303d7a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/pwned-passwords/zipball/7fe2088049127b9151ea457de21d13604303d7a1",
+                "reference": "7fe2088049127b9151ea457de21d13604303d7a1",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.6",
+                "guzzlehttp/guzzle": "6.* || 7.*"
+            },
+            "replace": {
+                "reflar/pwned-passwords": "*"
+            },
+            "require-dev": {
+                "flarum/phpstan": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Pwned Passwords",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-key",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/18348"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\PwnedPasswords\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FoF Team",
+                    "email": "team@friendsofflarum.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Check passwords against the Have I Been Pwned password database",
+            "homepage": "https://friendsofflarum.org/",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/18348",
+                "issues": "https://github.com/FriendsOfFlarum/pwned-passwords/issues",
+                "source": "https://github.com/FriendsOfFlarum/pwned-passwords"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2023-11-12T21:32:43+00:00"
+        },
+        {
             "name": "fof/reactions",
             "version": "1.4.1",
             "source": {
@@ -3661,6 +4076,158 @@
                 }
             ],
             "time": "2024-02-11T21:51:01+00:00"
+        },
+        {
+            "name": "fof/secure-https",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/secure-https.git",
+                "reference": "da2633f0be116b2c4b5bc4e4bbdba8eab53b58d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/secure-https/zipball/da2633f0be116b2c4b5bc4e4bbdba8eab53b58d0",
+                "reference": "da2633f0be116b2c4b5bc4e4bbdba8eab53b58d0",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0",
+                "guzzlehttp/guzzle": "^7.0"
+            },
+            "require-dev": {
+                "flarum/phpstan": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Secure HTTPS",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-lock",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/17771"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\SecureHttps\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martín",
+                    "email": "david.s@redevs.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Changes all images using http to https",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/17771",
+                "issues": "https://github.com/FriendsOfFlarum/secure-https/issues",
+                "source": "https://github.com/FriendsOfFlarum/secure-https"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2023-11-12T15:40:52+00:00"
+        },
+        {
+            "name": "fof/share-social",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/share-social.git",
+                "reference": "8f17b5c7136119ef69951e9aab8cd4712855d3e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/share-social/zipball/8f17b5c7136119ef69951e9aab8cd4712855d3e4",
+                "reference": "8f17b5c7136119ef69951e9aab8cd4712855d3e4",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0"
+            },
+            "replace": {
+                "avatar4eg/flarum-ext-share-social": "*"
+            },
+            "require-dev": {
+                "flarum/phpstan": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Share Social",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-share-alt",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/20401"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\ShareSocial\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martín",
+                    "email": "me+fof@datitisev.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add a button to share discussions through social networks",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/20401",
+                "issues": "https://github.com/FriendsOfFlarum/share-social/issues",
+                "source": "https://github.com/FriendsOfFlarum/share-social"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2024-02-02T19:26:27+00:00"
         },
         {
             "name": "fof/socialprofile",
@@ -5601,40 +6168,37 @@
             "time": "2020-06-13T08:05:20+00:00"
         },
         {
-            "name": "justoverclock/edit-posts",
-            "version": "0.1.1",
+            "name": "kyrne/whisper",
+            "version": "0.1.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/justoverclockl/edit-posts.git",
-                "reference": "9766f843b69386ba428052794e47a98a9c0c0522"
+                "url": "https://github.com/KyrneDev/whisper.git",
+                "reference": "7396c7ecc8766e3ed4f64569d53fd13c06716b67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justoverclockl/edit-posts/zipball/9766f843b69386ba428052794e47a98a9c0c0522",
-                "reference": "9766f843b69386ba428052794e47a98a9c0c0522",
+                "url": "https://api.github.com/repos/KyrneDev/whisper/zipball/7396c7ecc8766e3ed4f64569d53fd13c06716b67",
+                "reference": "7396c7ecc8766e3ed4f64569d53fd13c06716b67",
                 "shasum": ""
             },
             "require": {
-                "flarum/core": "^1.0.0"
-            },
-            "require-dev": {
-                "flarum/testing": "^1.0.0"
+                "flarum/core": "^1.0.2"
             },
             "type": "flarum-extension",
             "extra": {
                 "flarum-extension": {
-                    "title": "Edit Posts Buttons",
-                    "category": "",
+                    "title": "Whisper",
                     "icon": {
-                        "name": "fas fa-sliders-h",
-                        "backgroundColor": "white",
-                        "color": "red"
-                    }
+                        "name": "fas fa-comments",
+                        "background": "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(224,64,251,1) 0%, rgba(33,150,243,1) 100%)",
+                        "color": "#000"
+                    },
+                    "category": "feature"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Justoverclock\\EditPostsButton\\": "src/"
+                    "Kyrne\\Whisper\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -5643,20 +6207,26 @@
             ],
             "authors": [
                 {
-                    "name": "Marco Colia",
-                    "email": "info@flarum.it",
-                    "role": "Developer"
+                    "name": "Charlie Kern",
+                    "email": "Charlie.K@redevs.org",
+                    "homepage": "https://redevs.org"
                 }
             ],
-            "description": "Edit Posts button always visible",
+            "description": "Private Messaging for Flarum.",
             "keywords": [
-                "post controls"
+                "Settings",
+                "flarum",
+                "friendsofflarum",
+                "kyrne",
+                "points",
+                "private message"
             ],
             "support": {
-                "issues": "https://github.com/justoverclockl/edit-posts/issues",
-                "source": "https://github.com/justoverclockl/edit-posts/tree/0.1.1"
+                "forum": "https://discuss.flarum.org/d/24073-whisper-private-messaging-for-flarum",
+                "issues": "https://github.com/kyrne/whisper-public/issues",
+                "source": "https://github.com/kyrne/whisper-public"
             },
-            "time": "2021-08-11T08:35:37+00:00"
+            "time": "2021-12-07T23:56:56+00:00"
         },
         {
             "name": "laminas/laminas-diactoros",
