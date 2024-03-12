@@ -10,5 +10,11 @@
 use Flarum\Extend;
 
 return [
-    // Register extenders here to customize your forum!
+    (new Extend\Frontend('forum'))
+        ->css(__DIR__.'/public/custom/forum.css')
+        ->css(__DIR__.'/public/custom/both.css'),
+
+    (new Extend\Frontend('admin'))
+        ->css(__DIR__.'/public/custom/admin.css')
+        ->css(__DIR__.'/public/custom/both.css')
 ];
