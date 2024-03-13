@@ -1,0 +1,142 @@
+/* Header */
+.App-header .Button,
+.App-header .Button--link {
+    --header-colored-control-color: #fff;
+    color: var(--header-colored-control-color);
+    background:var(--rgba-light-2) !important;
+    border-radius:var(--border-radius-1);
+    transition: .2s;
+}
+
+.App-header .Button:hover,
+.App-header .Button--link:hover {
+    background:var(--rgba-light-3) !important;
+}
+
+.App-header .ConversationsList button {
+    color: var(--header-colored-control-color, #fff) !important;
+    background: var(--header-colored-control-bg, rgba(0,0,0,0.1)) !important;
+}
+
+.App-header .FormControl {
+    color: #fff;;
+    background: var(--rgba-light-2) !important;
+}
+
+.App-header .Search-input,
+.App-header .Search-input::placeholder {
+    color: #fff !important;
+}
+
+.App-header .Header-controls {
+    display:flex;
+    gap:var(--gap-size-2);
+}
+
+.Header-secondary .Search {
+    margin-right:0px;
+}
+
+/* Post */
+.Post-poll { 
+    border-top: 1px solid var(--rgba-dark-3); 
+    margin-top: 3rem; 
+}
+
+.DiscussionOverview { 
+    margin-top: 3rem !important; 
+}
+
+.Post-body { 
+    padding: 1rem;
+    background: var(--rgba-dark-subtle-1);
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+}
+
+button.Button.hidebutton.hasIcon {
+    margin-right:0px !important;
+}
+
+.PollOptions {
+    display:flex !important;
+    gap:1rem !important;
+}
+
+.Post-body img[src*="#thumbnail"] {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+[aria-label="Administrator*in"],
+[aria-label="Manager*in"] {
+    display:none;
+}
+
+.DiscussionListItem-badges li.item-poll {
+    display:none;
+}
+
+.Avatar img {
+    object-fit:cover;
+}
+
+.DiscussionHero-badges .badges { 
+    margin-right: 0px !important;
+    display: flex !important;
+    gap: .2rem !important;
+    margin-right: 0.75rem !important;
+}
+
+/* Discussion Overview */
+.DiscussionOverview {
+    background: var(--rgba-dark-subtle-1);
+}
+
+.DiscussionOverview-list {
+    padding: 1rem !important;
+    justify-content: space-between;
+}
+
+.DiscussionOverview-list li {
+    padding: 0px !important;
+    font-size: 12px;
+}
+
+.DiscussionOverview-list li h4 {
+    color:#9f9f9f;
+}
+
+.DiscussionOverview-list li .time,
+.DiscussionOverview-list li .number {
+    display:flex;
+    align-items:center;
+    font-size: inherit !important;
+    color:#606060;
+}
+
+.DiscussionOverview-list li .time .Avatar {
+    display:none;
+}
+
+.DiscussionOverview-list li .user-list .Avatar,
+.DiscussionOverview-list li .user-list a {
+    margin: 0px !important;
+}
+
+/* Profile - UserCard */
+.UserCard-info .item-fofsocialprofile {
+    border-top:1px solid rgba(255,255,255,.1);
+    display:block !important;
+}
+
+.UserCard-info .Badge.Badge--social {
+    --size:32px !important;
+    font-size:1rem;
+}
+
+.UserCard-info .Badge.Badge--social i.fa-cog {
+    padding-left: 6px;
+}

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d6f2db7027eb9b93f7d82ff3f227866",
+    "content-hash": "87f159814fe5ac0cfdb5a166056ee6cd",
     "packages": [
         {
             "name": "afrux/forum-widgets-core",
@@ -151,63 +151,6 @@
                 }
             ],
             "time": "2022-03-03T19:52:07+00:00"
-        },
-        {
-            "name": "askvortsov/flarum-discussion-templates",
-            "version": "v0.8.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/askvortsov1/flarum-discussion-templates.git",
-                "reference": "7eaf4aa375a9c6072d4f0a811b1889aea9a53fc3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/askvortsov1/flarum-discussion-templates/zipball/7eaf4aa375a9c6072d4f0a811b1889aea9a53fc3",
-                "reference": "7eaf4aa375a9c6072d4f0a811b1889aea9a53fc3",
-                "shasum": ""
-            },
-            "require": {
-                "flarum/core": "^1.0.0",
-                "flarum/tags": "^1.0.0"
-            },
-            "type": "flarum-extension",
-            "extra": {
-                "flarum-extension": {
-                    "title": "Discussion Templates",
-                    "category": "feature",
-                    "icon": {
-                        "name": "fas fa-plus-square",
-                        "backgroundColor": "#6932D1",
-                        "color": "#fff"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Askvortsov\\FlarumDiscussionTemplates\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alexander Skvortsov",
-                    "email": "askvortsov@flarum.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Create per-tag templates for new discussions.",
-            "keywords": [
-                "flarum"
-            ],
-            "support": {
-                "forum": "https://discuss.flarum.org/d/23950-discussion-templates-per-tag",
-                "issues": "https://github.com/askvortsov1/flarum-discussion-templates/issues",
-                "source": "https://github.com/askvortsov1/flarum-discussion-templates"
-            },
-            "time": "2021-10-30T22:46:30+00:00"
         },
         {
             "name": "axy/backtrace",
@@ -3105,6 +3048,105 @@
             "time": "2024-02-19T21:56:51+00:00"
         },
         {
+            "name": "fof/byobu",
+            "version": "1.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/byobu.git",
+                "reference": "9e90d7138d97ef09f8e2134a23225d3c016bdf65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/byobu/zipball/9e90d7138d97ef09f8e2134a23225d3c016bdf65",
+                "reference": "9e90d7138d97ef09f8e2134a23225d3c016bdf65",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.7.0",
+                "php": "^8.0"
+            },
+            "replace": {
+                "flagrow/byobu": "*"
+            },
+            "require-dev": {
+                "flarum/flags": "*",
+                "flarum/phpstan": "*",
+                "flarum/testing": "^1.0.0",
+                "fof/split": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Byōbu",
+                    "category": "feature",
+                    "icon": {
+                        "image": "resources/logo.svg",
+                        "backgroundColor": "#e74c3c",
+                        "backgroundSize": "90%",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundPosition": "center"
+                    },
+                    "optional-dependencies": [
+                        "flarum/suspend",
+                        "flarum/flags",
+                        "flarum/tags",
+                        "flarum/approval",
+                        "v17development/flarum-support"
+                    ]
+                },
+                "extiverse": {
+                    "discuss": "https://discuss.flarum.org/d/4762"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true,
+                        "backendTesting": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Byobu\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniël Klabbers",
+                    "email": "daniel@blomstra.net"
+                },
+                {
+                    "name": "IanM",
+                    "email": "ian@blomstra.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Well integrated, advanced private discussions.",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum",
+                "fof",
+                "messaging",
+                "pm",
+                "private discussions"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/4762",
+                "issues": "https://github.com/FriendsOfFlarum/byobu/issues",
+                "source": "https://github.com/FriendsOfFlarum/byobu"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2024-02-08T07:50:02+00:00"
+        },
+        {
             "name": "fof/discussion-thumbnail",
             "version": "1.1.3",
             "source": {
@@ -3246,57 +3288,6 @@
                 }
             ],
             "time": "2021-05-22T18:56:14+00:00"
-        },
-        {
-            "name": "fof/extend",
-            "version": "1.3.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FriendsOfFlarum/extend.git",
-                "reference": "ba55c9b765911cb689592d0de787e3351625e3f0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfFlarum/extend/zipball/ba55c9b765911cb689592d0de787e3351625e3f0",
-                "reference": "ba55c9b765911cb689592d0de787e3351625e3f0",
-                "shasum": ""
-            },
-            "require": {
-                "flarum/core": "^1.0.0"
-            },
-            "require-dev": {
-                "flarum/phpstan": "*",
-                "league/oauth2-client": "^2.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "FoF\\Extend\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "David Sevilla Martin",
-                    "email": "me+fof@datitisev.me",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Configurable PHP components for your Flarum extension",
-            "support": {
-                "issues": "https://github.com/FriendsOfFlarum/extend/issues",
-                "source": "https://github.com/FriendsOfFlarum/extend/tree/1.3.3"
-            },
-            "funding": [
-                {
-                    "url": "https://opencollective.com/fof",
-                    "type": "open_collective"
-                }
-            ],
-            "time": "2023-11-30T08:13:16+00:00"
         },
         {
             "name": "fof/formatting",
@@ -3591,94 +3582,6 @@
                 }
             ],
             "time": "2023-08-01T14:17:23+00:00"
-        },
-        {
-            "name": "fof/nightmode",
-            "version": "1.5.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FriendsOfFlarum/nightmode.git",
-                "reference": "4bdd136c63c0f40009910e200ec153efbc54d16d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfFlarum/nightmode/zipball/4bdd136c63c0f40009910e200ec153efbc54d16d",
-                "reference": "4bdd136c63c0f40009910e200ec153efbc54d16d",
-                "shasum": ""
-            },
-            "require": {
-                "flarum/core": "^1.5.0",
-                "fof/extend": "^1.0.0"
-            },
-            "replace": {
-                "reflar/nightmode": "*"
-            },
-            "type": "flarum-extension",
-            "extra": {
-                "flarum-extension": {
-                    "title": "FoF Night Mode",
-                    "category": "feature",
-                    "icon": {
-                        "name": "far fa-moon",
-                        "backgroundColor": "#e74c3c",
-                        "color": "#fff"
-                    }
-                },
-                "flagrow": {
-                    "discuss": "https://discuss.flarum.org/d/21492"
-                },
-                "optional-dependencies": [
-                    "fof/default-user-preferences"
-                ]
-            },
-            "autoload": {
-                "files": [
-                    "src/Overrides/Forum/ValidateCustomLess.php",
-                    "src/Overrides/Frontend/Assets.php",
-                    "src/Overrides/Frontend/RecompileFrontendAssets.php"
-                ],
-                "psr-4": {
-                    "FoF\\NightMode\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christian Lopez",
-                    "email": "Lopez.T.Christian@gmail.com"
-                },
-                {
-                    "name": "David Sevilla Martin",
-                    "homepage": "https://discuss.flarum.org/u/datitisev",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Add a Night Mode option for your users to use on your Flarum forum",
-            "homepage": "https://friendsofflarum.org",
-            "keywords": [
-                "extension",
-                "flarum",
-                "friendsoflarum",
-                "mode",
-                "night",
-                "nightmode",
-                "option"
-            ],
-            "support": {
-                "forum": "https://discuss.flarum.org/d/21492",
-                "issues": "https://github.com/FriendsOfFlarum/nightmode/issues",
-                "source": "https://github.com/FriendsOfFlarum/nightmode"
-            },
-            "funding": [
-                {
-                    "url": "https://opencollective.com/fof/donate",
-                    "type": "website"
-                }
-            ],
-            "time": "2023-08-28T18:26:09+00:00"
         },
         {
             "name": "fof/polls",
@@ -6089,67 +5992,6 @@
             "time": "2020-06-13T08:05:20+00:00"
         },
         {
-            "name": "kyrne/whisper",
-            "version": "0.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/KyrneDev/whisper.git",
-                "reference": "7396c7ecc8766e3ed4f64569d53fd13c06716b67"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/KyrneDev/whisper/zipball/7396c7ecc8766e3ed4f64569d53fd13c06716b67",
-                "reference": "7396c7ecc8766e3ed4f64569d53fd13c06716b67",
-                "shasum": ""
-            },
-            "require": {
-                "flarum/core": "^1.0.2"
-            },
-            "type": "flarum-extension",
-            "extra": {
-                "flarum-extension": {
-                    "title": "Whisper",
-                    "icon": {
-                        "name": "fas fa-comments",
-                        "background": "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(224,64,251,1) 0%, rgba(33,150,243,1) 100%)",
-                        "color": "#000"
-                    },
-                    "category": "feature"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Kyrne\\Whisper\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Charlie Kern",
-                    "email": "Charlie.K@redevs.org",
-                    "homepage": "https://redevs.org"
-                }
-            ],
-            "description": "Private Messaging for Flarum.",
-            "keywords": [
-                "Settings",
-                "flarum",
-                "friendsofflarum",
-                "kyrne",
-                "points",
-                "private message"
-            ],
-            "support": {
-                "forum": "https://discuss.flarum.org/d/24073-whisper-private-messaging-for-flarum",
-                "issues": "https://github.com/kyrne/whisper-public/issues",
-                "source": "https://github.com/kyrne/whisper-public"
-            },
-            "time": "2021-12-07T23:56:56+00:00"
-        },
-        {
             "name": "laminas/laminas-diactoros",
             "version": "2.26.0",
             "source": {
@@ -6854,16 +6696,16 @@
         },
         {
             "name": "matthiasmullie/minify",
-            "version": "1.3.71",
+            "version": "1.3.72",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matthiasmullie/minify.git",
-                "reference": "ae42a47d7fecc1fbb7277b2f2d84c37a33edc3b1"
+                "reference": "531fdeef1911ffe27a53f8a19c297648c78f757e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matthiasmullie/minify/zipball/ae42a47d7fecc1fbb7277b2f2d84c37a33edc3b1",
-                "reference": "ae42a47d7fecc1fbb7277b2f2d84c37a33edc3b1",
+                "url": "https://api.github.com/repos/matthiasmullie/minify/zipball/531fdeef1911ffe27a53f8a19c297648c78f757e",
+                "reference": "531fdeef1911ffe27a53f8a19c297648c78f757e",
                 "shasum": ""
             },
             "require": {
@@ -6913,7 +6755,7 @@
             ],
             "support": {
                 "issues": "https://github.com/matthiasmullie/minify/issues",
-                "source": "https://github.com/matthiasmullie/minify/tree/1.3.71"
+                "source": "https://github.com/matthiasmullie/minify/tree/1.3.72"
             },
             "funding": [
                 {
@@ -6921,7 +6763,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-04-25T20:33:03+00:00"
+            "time": "2024-03-13T12:02:00+00:00"
         },
         {
             "name": "matthiasmullie/path-converter",
@@ -11143,16 +10985,16 @@
         },
         {
             "name": "the-turk/flarum-stickiest",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/the-turk/flarum-stickiest.git",
-                "reference": "357dea55eeea1cdc5f59357b2ee6d511693293fc"
+                "reference": "4cf0903273a5bf6dd3198c7327c33b8120a299c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/the-turk/flarum-stickiest/zipball/357dea55eeea1cdc5f59357b2ee6d511693293fc",
-                "reference": "357dea55eeea1cdc5f59357b2ee6d511693293fc",
+                "url": "https://api.github.com/repos/the-turk/flarum-stickiest/zipball/4cf0903273a5bf6dd3198c7327c33b8120a299c1",
+                "reference": "4cf0903273a5bf6dd3198c7327c33b8120a299c1",
                 "shasum": ""
             },
             "require": {
@@ -11200,7 +11042,7 @@
                 "issues": "https://github.com/the-turk/flarum-stickiest/issues",
                 "source": "https://github.com/the-turk/flarum-stickiest"
             },
-            "time": "2022-07-24T14:53:54+00:00"
+            "time": "2022-08-07T12:45:30+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
