@@ -11,10 +11,10 @@ use Flarum\Extend;
 
 return [
     (new Extend\Frontend('forum'))
-        ->css(__DIR__.'/public/custom/forum.css')
-        ->css(__DIR__.'/public/custom/both.css'),
+        ->css(__DIR__.'/public/custom/common.css')
+        ->css(__DIR__.'/public/custom/forum.css'),
 
     (new Extend\Frontend('admin'))
+        ->css(__DIR__.'/public/custom/common.css')
         ->css(__DIR__.'/public/custom/admin.css')
-        ->css(__DIR__.'/public/custom/both.css')
 ];
