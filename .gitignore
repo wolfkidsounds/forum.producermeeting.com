@@ -1,2 +1,7 @@
-/vendor/*
-config.php
+/vendor/
+/config.php
+/storage/cache/
+/storage/logs/
+/storage/private-shared/
+/storage/sessions/
+/storage/tmp/
