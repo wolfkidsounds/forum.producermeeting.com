@@ -149,6 +149,11 @@ button.Button.hidebutton.hasIcon {
     margin: 0px !important;
 }
 
+.DiscussionOverview-list li.avatars,
+.DiscussionOverview-list li.users {
+    display:none !important;
+}
+
 /* Profile - UserCard */
 .UserCard-info .item-fofsocialprofile {
     border-top:1px solid rgba(255,255,255,.1);
