@@ -37,14 +37,45 @@
     margin-right:0px;
 }
 
-/* Post */
+@media (max-width: 767.98px) {
+    .App-header .Header-controls {
+        display: flex;
+        gap: var(--gap-size-2);
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 1rem;
+    }
+
+    .Search-input .Button--icon i,
+    .Search-input .Button--link i {
+        width:100%;
+        text-align:center;
+    }
+}
+
+/* Post Poll */
 .Post-poll { 
     border-top: 1px solid var(--rgba-dark-3); 
     margin-top: 3rem; 
 }
 
-.DiscussionOverview { 
-    margin-top: 3rem !important; 
+.Post-poll .PollOptions {
+    display: flex !important;
+    gap: .6rem !important;
+    flex-direction: column !important;
+    margin-left: 0px !important;
+}
+
+.PollOption {
+    width:100%;
+}
+
+/* Post */
+.DiscussionHero-badges .badges { 
+    margin-right: 0px !important;
+    display: flex !important;
+    gap: .2rem !important;
+    margin-right: 0.75rem !important;
 }
 
 .Post-body { 
@@ -54,20 +85,15 @@
     margin-bottom: 1rem;
 }
 
-button.Button.hidebutton.hasIcon {
-    margin-right:0px !important;
-}
-
-.PollOptions {
-    display:flex !important;
-    gap:1rem !important;
-}
-
 .Post-body img[src*="#thumbnail"] {
     width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 0.3rem;
+}
+
+button.Button.hidebutton.hasIcon {
+    margin-right:0px !important;
 }
 
 [aria-label="Administrator*in"],
@@ -83,14 +109,11 @@ button.Button.hidebutton.hasIcon {
     object-fit:cover;
 }
 
-.DiscussionHero-badges .badges { 
-    margin-right: 0px !important;
-    display: flex !important;
-    gap: .2rem !important;
-    margin-right: 0.75rem !important;
+/* Discussion Overview */
+.DiscussionOverview { 
+    margin-top: 3rem !important; 
 }
 
-/* Discussion Overview */
 .DiscussionOverview {
     background: var(--rgba-dark-subtle-1);
 }

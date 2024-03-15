@@ -47,6 +47,7 @@
         "fof/byobu": "*",
         "fof/discussion-thumbnail": "*",
         "fof/disposable-emails": "*",
+        "fof/follow-tags": "^1.2",
         "fof/formatting": "*",
         "fof/impersonate": "*",
         "fof/links": "*",
