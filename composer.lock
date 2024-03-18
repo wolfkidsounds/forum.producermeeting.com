@@ -4,8 +4,95 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a4d6141ff541bb234376b37d7677bf3",
+    "content-hash": "c11c297531324138a5b60d1923e1ee02",
     "packages": [
+        {
+            "name": "acpl/my-tags",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/android-com-pl/my-tags.git",
+                "reference": "cdbaca3bfce1700f070d052d9671b0025b899d43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/android-com-pl/my-tags/zipball/cdbaca3bfce1700f070d052d9671b0025b899d43",
+                "reference": "cdbaca3bfce1700f070d052d9671b0025b899d43",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2",
+                "fof/follow-tags": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "My Tags",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-th-list",
+                        "backgroundColor": "#0F9D58",
+                        "color": "#fff"
+                    }
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "admin": true,
+                        "forum": true,
+                        "js": true,
+                        "jsCommon": false,
+                        "gitConf": true,
+                        "githubActions": true,
+                        "prettier": true,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "backendTesting": false,
+                        "editorConfig": true,
+                        "styleci": true,
+                        "css": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Acpl\\MyTags\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rafał Całka",
+                    "homepage": "https://github.com/rafaucau",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Szymon Kilar",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Displays a list of tags that the user is following in the sidebar.",
+            "keywords": [
+                "Follow",
+                "flarum",
+                "sidebar",
+                "tags"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/28004-my-tags",
+                "issues": "https://github.com/android-com-pl/my-tags/issues",
+                "source": "https://github.com/android-com-pl/my-tags"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/android-com-pl/my-tags?sponsor=1",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-02-05T00:27:32+00:00"
+        },
         {
             "name": "afrux/forum-widgets-core",
             "version": "v0.1.7",
@@ -204,6 +291,82 @@
                 "source": "https://github.com/axypro/backtrace/tree/2.0.0"
             },
             "time": "2019-02-02T18:01:31+00:00"
+        },
+        {
+            "name": "blomstra/sort-order-toggle",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blomstra/flarum-ext-sort-order-toggle.git",
+                "reference": "4e3cf5919fa2af5e09594eefebfb4506d6c330dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blomstra/flarum-ext-sort-order-toggle/zipball/4e3cf5919fa2af5e09594eefebfb4506d6c330dc",
+                "reference": "4e3cf5919fa2af5e09594eefebfb4506d6c330dc",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.3.0",
+                "php": "^8.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Sort Order Toggle",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-sort-amount-down",
+                        "backgroundColor": "#EBF1FD",
+                        "color": "#3a98d0"
+                    }
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "admin": false,
+                        "forum": true,
+                        "js": true,
+                        "jsCommon": false,
+                        "css": true,
+                        "locale": true,
+                        "gitConf": true,
+                        "githubActions": true,
+                        "prettier": true,
+                        "typescript": true,
+                        "bundlewatch": false,
+                        "backendTesting": false,
+                        "editorConfig": false,
+                        "styleci": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Blomstra\\SortOrderToggle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Team Blomstra",
+                    "email": "development@blomstra.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add a button next to Flarum's sort dropdown for you to toggle between ascending and descending.",
+            "homepage": "https://blomstra.net",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/30157",
+                "issues": "https://github.com/blomstra/flarum-ext-sort-order-toggle/issues",
+                "source": "https://github.com/blomstra/flarum-ext-sort-order-toggle"
+            },
+            "time": "2022-08-29T16:39:12+00:00"
         },
         {
             "name": "brick/math",
@@ -505,80 +668,6 @@
                 }
             ],
             "time": "2024-01-27T17:16:50+00:00"
-        },
-        {
-            "name": "datlechin/flarum-discussion-overview",
-            "version": "v0.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/flatension/discussion-overview.git",
-                "reference": "c1d72d99a6738d344b770e56041c96b59cb72f29"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/flatension/discussion-overview/zipball/c1d72d99a6738d344b770e56041c96b59cb72f29",
-                "reference": "c1d72d99a6738d344b770e56041c96b59cb72f29",
-                "shasum": ""
-            },
-            "require": {
-                "flarum/core": "^1.2.0"
-            },
-            "type": "flarum-extension",
-            "extra": {
-                "flarum-extension": {
-                    "title": "Discussion Overview",
-                    "category": "feature",
-                    "icon": {
-                        "name": "fas fa-chart-bar",
-                        "color": "#fff",
-                        "backgroundColor": "#D3241C"
-                    }
-                },
-                "flarum-cli": {
-                    "modules": {
-                        "admin": true,
-                        "forum": true,
-                        "js": true,
-                        "jsCommon": false,
-                        "css": true,
-                        "locale": true,
-                        "gitConf": true,
-                        "githubActions": true,
-                        "prettier": true,
-                        "typescript": true,
-                        "bundlewatch": false,
-                        "backendTesting": false,
-                        "editorConfig": true,
-                        "styleci": true
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Datlechin\\DiscussionOverview\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ngo Quoc Dat",
-                    "email": "datlechin@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Display overview of discussions.",
-            "keywords": [
-                "flarum"
-            ],
-            "support": {
-                "forum": "https://discuss.flarum.org/d/31265",
-                "issues": "https://github.com/flatension/discussion-overview/issues",
-                "source": "https://github.com/datlechin/flarum-discussion-overview"
-            },
-            "time": "2022-07-22T15:59:39+00:00"
         },
         {
             "name": "datlechin/flarum-offline-indicator",
@@ -1708,86 +1797,6 @@
             "time": "2023-06-13T18:30:42+00:00"
         },
         {
-            "name": "flarum/approval",
-            "version": "v1.8.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/flarum/approval.git",
-                "reference": "b1442698dd4e57300b7b2e5b1b6a14ee484757ba"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/flarum/approval/zipball/b1442698dd4e57300b7b2e5b1b6a14ee484757ba",
-                "reference": "b1442698dd4e57300b7b2e5b1b6a14ee484757ba",
-                "shasum": ""
-            },
-            "require": {
-                "flarum/core": "^1.8",
-                "flarum/flags": "^1.7"
-            },
-            "require-dev": {
-                "flarum/testing": "^1.0.0"
-            },
-            "type": "flarum-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.x-dev"
-                },
-                "flarum-extension": {
-                    "title": "Approval",
-                    "category": "feature",
-                    "icon": {
-                        "name": "fas fa-check",
-                        "backgroundColor": "#ABDC88",
-                        "color": "#3F8A32"
-                    }
-                },
-                "flarum-cli": {
-                    "modules": {
-                        "admin": true,
-                        "forum": true,
-                        "js": true,
-                        "jsCommon": false,
-                        "css": true,
-                        "gitConf": true,
-                        "githubActions": true,
-                        "prettier": true,
-                        "typescript": false,
-                        "bundlewatch": false,
-                        "backendTesting": true,
-                        "editorConfig": true,
-                        "styleci": true
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Flarum\\Approval\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Make discussions and posts require moderator approval.",
-            "homepage": "https://flarum.org",
-            "keywords": [
-                "moderation"
-            ],
-            "support": {
-                "forum": "https://discuss.flarum.org",
-                "issues": "https://github.com/flarum/framework/issues",
-                "source": "https://github.com/flarum/approval"
-            },
-            "funding": [
-                {
-                    "url": "https://flarum.org/donate/",
-                    "type": "website"
-                }
-            ],
-            "time": "2023-11-17T16:58:14+00:00"
-        },
-        {
             "name": "flarum/bbcode",
             "version": "v1.8.0",
             "source": {
@@ -2238,85 +2247,6 @@
                 {
                     "url": "https://opencollective.com/flarum",
                     "type": "open_collective"
-                }
-            ],
-            "time": "2023-05-20T15:08:42+00:00"
-        },
-        {
-            "name": "flarum/likes",
-            "version": "v1.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/flarum/likes.git",
-                "reference": "55dfbb535a18149cd0cca66703fd19da07cb3a36"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/flarum/likes/zipball/55dfbb535a18149cd0cca66703fd19da07cb3a36",
-                "reference": "55dfbb535a18149cd0cca66703fd19da07cb3a36",
-                "shasum": ""
-            },
-            "require": {
-                "flarum/core": "^1.8"
-            },
-            "require-dev": {
-                "flarum/testing": "^1.0.0"
-            },
-            "type": "flarum-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.x-dev"
-                },
-                "flarum-extension": {
-                    "title": "Likes",
-                    "category": "feature",
-                    "icon": {
-                        "name": "far fa-thumbs-up",
-                        "backgroundColor": "#3A649D",
-                        "color": "#fff"
-                    }
-                },
-                "flarum-cli": {
-                    "modules": {
-                        "admin": true,
-                        "forum": true,
-                        "js": true,
-                        "jsCommon": false,
-                        "css": true,
-                        "gitConf": true,
-                        "githubActions": true,
-                        "prettier": true,
-                        "typescript": false,
-                        "bundlewatch": false,
-                        "backendTesting": true,
-                        "editorConfig": true,
-                        "styleci": true
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Flarum\\Likes\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Allow users to like posts.",
-            "homepage": "https://flarum.org",
-            "keywords": [
-                "discussion"
-            ],
-            "support": {
-                "forum": "https://discuss.flarum.org",
-                "issues": "https://github.com/flarum/framework/issues",
-                "source": "https://github.com/flarum/likes"
-            },
-            "funding": [
-                {
-                    "url": "https://flarum.org/donate/",
-                    "type": "website"
                 }
             ],
             "time": "2023-05-20T15:08:42+00:00"
@@ -3290,6 +3220,86 @@
             "time": "2021-05-22T18:56:14+00:00"
         },
         {
+            "name": "fof/drafts",
+            "version": "1.2.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/drafts.git",
+                "reference": "f6f8bdfe3569b6cbca5527e60818c3755c45d5bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/drafts/zipball/f6f8bdfe3569b6cbca5527e60818c3755c45d5bc",
+                "reference": "f6f8bdfe3569b6cbca5527e60818c3755c45d5bc",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8.3"
+            },
+            "require-dev": {
+                "blomstra/gdpr": "@beta",
+                "flarum/phpstan": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Drafts",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-edit",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    },
+                    "optional-dependencies": [
+                        "fof/byobu",
+                        "blomstra/gdpr"
+                    ]
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/20957"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Drafts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FoF Team",
+                    "email": "team@friendsofflarum.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Allow users to create post and discussion drafts",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "Friends of Flarum",
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/20957",
+                "issues": "https://github.com/FriendsOfFlarum/drafts/issues",
+                "source": "https://github.com/FriendsOfFlarum/drafts"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2023-11-15T14:37:11+00:00"
+        },
+        {
             "name": "fof/extend",
             "version": "1.3.3",
             "source": {
@@ -3498,6 +3508,93 @@
             "time": "2023-03-15T11:26:45+00:00"
         },
         {
+            "name": "fof/gamification",
+            "version": "1.6.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/gamification.git",
+                "reference": "0f84851d07a7f35625b66e276c34c06f80272f65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/gamification/zipball/0f84851d07a7f35625b66e276c34c06f80272f65",
+                "reference": "0f84851d07a7f35625b66e276c34c06f80272f65",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "flarum/core": "^1.3.1",
+                "fof/extend": "^1.0.0"
+            },
+            "replace": {
+                "reflar/gamification": "*"
+            },
+            "require-dev": {
+                "flarum/phpstan": "*",
+                "flarum/pusher": "*",
+                "flarum/testing": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Gamification",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-thumbs-up",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/20671"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true,
+                        "backendTesting": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Gamification\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FoF Team",
+                    "email": "team@friendsofflarum.org",
+                    "homepage": "https://friendsofflarum.org"
+                }
+            ],
+            "description": "Upvotes and downvotes for your Flarum community",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "Gamification",
+                "Settings",
+                "flarum",
+                "friendsofflarum",
+                "misc",
+                "points"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/20671",
+                "issues": "https://github.com/FriendsOfFlarum/gamification/issues",
+                "source": "https://github.com/FriendsOfFlarum/gamification"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2023-12-12T19:16:39+00:00"
+        },
+        {
             "name": "fof/impersonate",
             "version": "1.1.1",
             "source": {
@@ -3653,6 +3750,93 @@
                 }
             ],
             "time": "2024-02-26T11:31:53+00:00"
+        },
+        {
+            "name": "fof/masquerade",
+            "version": "2.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/masquerade.git",
+                "reference": "d0f7ce1fac1801548e670eb1f83ff027afb558cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/masquerade/zipball/d0f7ce1fac1801548e670eb1f83ff027afb558cd",
+                "reference": "d0f7ce1fac1801548e670eb1f83ff027afb558cd",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2"
+            },
+            "replace": {
+                "flagrow/masquerade": "*"
+            },
+            "require-dev": {
+                "flarum/phpstan": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Masquerade",
+                    "category": "feature",
+                    "icon": {
+                        "image": "resources/logo.svg",
+                        "backgroundColor": "#e74c3c",
+                        "backgroundSize": "90%",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundPosition": "center"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/5791"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Masquerade\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniël Klabbers",
+                    "email": "daniel@klabbers.email",
+                    "homepage": "https://luceos.com/"
+                },
+                {
+                    "name": "Clark Winkelmann",
+                    "email": "clark.winkelmann@gmail.com",
+                    "homepage": "https://clarkwinkelmann.com/"
+                }
+            ],
+            "description": "User profile builder extension for your Flarum forum.",
+            "keywords": [
+                "extension",
+                "flarum",
+                "member profile",
+                "profile",
+                "user profile"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/5791",
+                "issues": "https://github.com/FriendsOfFlarum/masquerade/issues",
+                "source": "https://github.com/FriendsOfFlarum/masquerade"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2023-11-12T10:35:09+00:00"
         },
         {
             "name": "fof/merge-discussions",
@@ -4348,6 +4532,99 @@
             "time": "2023-11-12T10:15:32+00:00"
         },
         {
+            "name": "fof/user-directory",
+            "version": "1.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/user-directory.git",
+                "reference": "99fdc5b831eaa232e1c34bd8d9f3fd267e836f0f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/user-directory/zipball/99fdc5b831eaa232e1c34bd8d9f3fd267e836f0f",
+                "reference": "99fdc5b831eaa232e1c34bd8d9f3fd267e836f0f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "flarum/core": "^1.7.0"
+            },
+            "replace": {
+                "flagrow/user-directory": "*"
+            },
+            "require-dev": {
+                "flarum/phpstan": "*",
+                "flarum/suspend": "*",
+                "flarum/testing": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF User Directory",
+                    "category": "feature",
+                    "icon": {
+                        "name": "far fa-address-book",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    },
+                    "optional-dependencies": [
+                        "flarum/suspend"
+                    ]
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/5682"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true,
+                        "backendTesting": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\UserDirectory\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniël Klabbers",
+                    "email": "daniel@klabbers.email",
+                    "homepage": "https://luceos.com/"
+                },
+                {
+                    "name": "Clark Winkelmann",
+                    "email": "clark.winkelmann@gmail.com",
+                    "homepage": "https://clarkwinkelmann.com/"
+                }
+            ],
+            "description": "The permission based public user directory extension for your Flarum forum.",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "extension",
+                "flarum",
+                "member list",
+                "user directory",
+                "user list"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/5682",
+                "issues": "https://github.com/FriendsOfFlarum/user-directory/issues",
+                "source": "https://github.com/FriendsOfFlarum/user-directory"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2023-11-12T21:23:36+00:00"
+        },
+        {
             "name": "franzl/whoops-middleware",
             "version": "2.0.0",
             "source": {
@@ -4795,6 +5072,85 @@
                 }
             ],
             "time": "2023-12-03T20:05:35+00:00"
+        },
+        {
+            "name": "ianm/level-ranks",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/imorland/level-ranks.git",
+                "reference": "680c0e08daf1b2dd419d43822b86b892c100188e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/imorland/level-ranks/zipball/680c0e08daf1b2dd419d43822b86b892c100188e",
+                "reference": "680c0e08daf1b2dd419d43822b86b892c100188e",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0"
+            },
+            "replace": {
+                "reflar/level-ranks": "*"
+            },
+            "require-dev": {
+                "flarum/phpstan": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Level Ranks",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-percent",
+                        "backgroundColor": "#0072e3",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/27869"
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "IanM\\LevelRanks\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shahiem Seymor",
+                    "email": "s.seymor@live.nl",
+                    "homepage": "http://shahiemseymor.com/"
+                },
+                {
+                    "name": "IanM",
+                    "homepage": "https://discuss.flarum.org/u/ianm",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add a level/experience bar to your flarum Forum.",
+            "keywords": [
+                "experience",
+                "extension",
+                "flarum",
+                "level",
+                "xp"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/27869",
+                "issues": "https://github.com/imorland/level-ranks/issues",
+                "source": "https://github.com/imorland/level-ranks"
+            },
+            "time": "2023-11-14T09:30:27+00:00"
         },
         {
             "name": "illuminate/bus",
@@ -6134,6 +6490,73 @@
             "time": "2020-06-13T08:05:20+00:00"
         },
         {
+            "name": "justoverclock/flarum-ext-feedback",
+            "version": "0.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justoverclockl/flarum-ext-feedback.git",
+                "reference": "e983b3c5fcdf38f89bd02e84070c6b338b6245e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justoverclockl/flarum-ext-feedback/zipball/e983b3c5fcdf38f89bd02e84070c6b338b6245e6",
+                "reference": "e983b3c5fcdf38f89bd02e84070c6b338b6245e6",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "require-dev": {
+                "flarum/testing": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Feedback",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-comment-dots",
+                        "backgroundColor": "green",
+                        "color": "white"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/XXX"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Justoverclock\\Feedback\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Colia",
+                    "homepage": "https://discuss.flarum.org/u/Justoverclock",
+                    "role": "Developer"
+                },
+                {
+                    "name": "IanM",
+                    "homepage": "https://discuss.flarum.org/u/ianm",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add a feedback module to Flarum",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/28089-feedback",
+                "issues": "https://github.com/justoverclockl/flarum-ext-feedback/issues",
+                "source": "https://github.com/justoverclockl/flarum-ext-feedback"
+            },
+            "time": "2021-07-24T15:36:05+00:00"
+        },
+        {
             "name": "laminas/laminas-diactoros",
             "version": "2.26.0",
             "source": {
@@ -6838,16 +7261,16 @@
         },
         {
             "name": "matthiasmullie/minify",
-            "version": "1.3.72",
+            "version": "1.3.73",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matthiasmullie/minify.git",
-                "reference": "531fdeef1911ffe27a53f8a19c297648c78f757e"
+                "reference": "cb7a9297b4ab070909cefade30ee95054d4ae87a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matthiasmullie/minify/zipball/531fdeef1911ffe27a53f8a19c297648c78f757e",
-                "reference": "531fdeef1911ffe27a53f8a19c297648c78f757e",
+                "url": "https://api.github.com/repos/matthiasmullie/minify/zipball/cb7a9297b4ab070909cefade30ee95054d4ae87a",
+                "reference": "cb7a9297b4ab070909cefade30ee95054d4ae87a",
                 "shasum": ""
             },
             "require": {
@@ -6897,7 +7320,7 @@
             ],
             "support": {
                 "issues": "https://github.com/matthiasmullie/minify/issues",
-                "source": "https://github.com/matthiasmullie/minify/tree/1.3.72"
+                "source": "https://github.com/matthiasmullie/minify/tree/1.3.73"
             },
             "funding": [
                 {
@@ -6905,7 +7328,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-13T12:02:00+00:00"
+            "time": "2024-03-15T10:27:10+00:00"
         },
         {
             "name": "matthiasmullie/path-converter",
