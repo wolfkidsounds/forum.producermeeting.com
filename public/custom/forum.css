@@ -53,6 +53,13 @@
     }
 }
 
+/* Sidebar Navigation */
+.item-Glossary,
+.item-rankings,
+.item-birthdays {
+    display:none !important;
+}
+
 /* Post Poll */
 .Post-poll { 
     border-top: 1px solid var(--rgba-dark-3); 
@@ -155,8 +162,14 @@ button.Button.hidebutton.hasIcon {
 }
 
 /* Profile - UserCard */
-.UserCard-info .item-fofsocialprofile {
-    border-top:1px solid rgba(255,255,255,.1);
+.UserCard-info .item-masquerade-bio {
+    margin-top:.5rem;
+    display:block !important;
+}
+
+.UserCard-info .item-fofsocialprofile,
+.UserCard-info .item-birthday {
+    margin-top:.25rem;
     display:block !important;
 }
 
