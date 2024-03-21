@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c11c297531324138a5b60d1923e1ee02",
+    "content-hash": "ad25bcf8a435bb54cec690930a48942a",
     "packages": [
         {
             "name": "acpl/my-tags",
@@ -548,6 +548,74 @@
                 "source": "https://github.com/clarkwinkelmann/flarum-ext-circle-groups"
             },
             "time": "2022-03-20T18:00:35+00:00"
+        },
+        {
+            "name": "clarkwinkelmann/flarum-ext-mailing",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clarkwinkelmann/flarum-ext-mailing.git",
+                "reference": "90a4147f5c4c0d12c8f6eb2409277b5fb45e94d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clarkwinkelmann/flarum-ext-mailing/zipball/90a4147f5c4c0d12c8f6eb2409277b5fb45e94d8",
+                "reference": "90a4147f5c4c0d12c8f6eb2409277b5fb45e94d8",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.7",
+                "php": "^8.0"
+            },
+            "replace": {
+                "kilowhat/flarum-ext-mailing": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Mailing",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-envelope",
+                        "backgroundColor": "#684ba6",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/20443"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ClarkWinkelmann\\Mailing\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Clark Winkelmann",
+                    "email": "clark.winkelmann@gmail.com",
+                    "homepage": "https://clarkwinkelmann.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Send individual or mass mailing to Flarum users",
+            "keywords": [
+                "email",
+                "extension",
+                "flarum",
+                "mailing",
+                "mass-mailing"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/20443",
+                "issues": "https://github.com/clarkwinkelmann/flarum-ext-mailing/issues",
+                "source": "https://github.com/clarkwinkelmann/flarum-ext-mailing"
+            },
+            "time": "2023-04-13T20:57:48+00:00"
         },
         {
             "name": "components/font-awesome",
@@ -7754,6 +7822,125 @@
                 }
             ],
             "time": "2022-06-09T08:53:42+00:00"
+        },
+        {
+            "name": "nearata/flarum-ext-internal-links-noreload",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nearata/flarum-ext-internal-links-noreload.git",
+                "reference": "41867f88a93a52cc50073e8eb0881a09945e0d4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nearata/flarum-ext-internal-links-noreload/zipball/41867f88a93a52cc50073e8eb0881a09945e0d4d",
+                "reference": "41867f88a93a52cc50073e8eb0881a09945e0d4d",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Internal Links No Reload",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-link",
+                        "backgroundColor": "#738290",
+                        "color": "#fff"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nearata\\InternalLinksNoReload\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Nearata",
+                    "email": "nearata@protonmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Internal links no longer trigger a page reload.",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/26844",
+                "issues": "https://github.com/Nearata/flarum-ext-internal-links-noreload/issues",
+                "source": "https://github.com/Nearata/flarum-ext-internal-links-noreload"
+            },
+            "time": "2023-06-20T16:37:12+00:00"
+        },
+        {
+            "name": "nearata/flarum-ext-signup-confirm-password",
+            "version": "v3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nearata/flarum-ext-signup-confirm-password.git",
+                "reference": "b24bba7dc0866fb6319a03054cd882ca12cd44ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nearata/flarum-ext-signup-confirm-password/zipball/b24bba7dc0866fb6319a03054cd882ca12cd44ee",
+                "reference": "b24bba7dc0866fb6319a03054cd882ca12cd44ee",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.7",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.5.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Sign Up Confirm Password",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-check-double",
+                        "backgroundColor": "#2896bf",
+                        "color": "#fff"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nearata\\SignUpConfirmPassword\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Nearata",
+                    "email": "nearata@protonmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Adds a confirm password field in the Sign Up modal.",
+            "keywords": [
+                "check",
+                "confirm",
+                "flarum",
+                "password"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/24527",
+                "issues": "https://github.com/Nearata/flarum-ext-signup-confirm-password/issues",
+                "source": "https://github.com/Nearata/flarum-ext-signup-confirm-password"
+            },
+            "time": "2023-11-01T08:14:33+00:00"
         },
         {
             "name": "nesbot/carbon",

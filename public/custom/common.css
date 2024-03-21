@@ -36,3 +36,13 @@
 	background-repeat: no-repeat !important;
 	background-attachment: fixed;
 }
+
+.PrivateFacade-AuthView {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PrivateFacade-AuthView-interface {
+    display:none !important;
+}

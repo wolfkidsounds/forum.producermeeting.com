@@ -26,6 +26,7 @@
         "afrux/online-users-widget": "*",
         "blomstra/sort-order-toggle": "*",
         "clarkwinkelmann/flarum-ext-circle-groups": "*",
+        "clarkwinkelmann/flarum-ext-mailing": "^1.1",
         "datlechin/flarum-birthdays": "*",
         "datlechin/flarum-offline-indicator": "*",
         "flarum-lang/german": "*",
@@ -66,6 +67,8 @@
         "glowingblue/password-strength": "*",
         "ianm/level-ranks": "*",
         "justoverclock/flarum-ext-feedback": "*",
+        "nearata/flarum-ext-internal-links-noreload": "*",
+        "nearata/flarum-ext-signup-confirm-password": "*",
         "sycho/flarum-private-facade": "*",
         "the-turk/flarum-stickiest": "*"
     },
