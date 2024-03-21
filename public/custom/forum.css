@@ -77,6 +77,11 @@
     width:100%;
 }
 
+/* Theme Menu */
+.TagsPage-nav {
+    display:none !important;
+}
+
 /* Post */
 .DiscussionHero-badges .badges { 
     margin-right: 0px !important;
