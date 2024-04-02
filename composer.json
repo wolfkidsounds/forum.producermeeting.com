@@ -33,6 +33,7 @@
         "flarum/bbcode": "*",
         "flarum/core": "*",
         "flarum/emoji": "*",
+        "flarum/extension-manager": "*",
         "flarum/flags": "*",
         "flarum/lang-english": "*",
         "flarum/lock": "*",
