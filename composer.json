@@ -64,6 +64,7 @@
         "fof/share-social": "*",
         "fof/socialprofile": "*",
         "fof/split": "*",
+        "fof/upload": "*",
         "fof/user-directory": "*",
         "glowingblue/password-strength": "*",
         "ianm/level-ranks": "*",
