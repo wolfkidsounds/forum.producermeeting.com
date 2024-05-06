@@ -186,3 +186,9 @@ button.Button.hidebutton.hasIcon {
 .UserCard-info .Badge.Badge--social i.fa-cog {
     padding-left: 6px;
 }
+
+@media only screen and (max-width : 767px) {
+    .PostUser-level {
+        display:none;
+    }
+}
